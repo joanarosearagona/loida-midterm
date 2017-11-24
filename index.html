@@ -1,0 +1,239 @@
+<html>
+<head>
+<body>
+<link href="loida.css" rel="stylesheet">
+<table align=center width=45%>
+	<tr>
+		<td>
+			<body onload=dis()>
+			<div class=main>
+				
+				<div class=name>
+					<h2 align="right">ALARM CLOCK</h2>
+				</div>
+				
+				<hr>
+				
+				<div class=headding>
+					<div class=lefth>
+						<h2 align="right">HOURS</h2>
+					</div>
+					<div class=centerh>
+						<h2 align="right">MINUTES</h2>
+					</div>
+					<div class=righth>
+						<h2 align="right">SECONDS</h2>
+					</div>
+				</div>
+				<input type=hidden id=d2 name=d2>
+				<div class=clock>
+					<div class="rightc" >
+						
+						<input type=text readonly id=hour name=hour size=1 class=time> 
+					</div>
+					<div class="centerc">
+						
+						<input type=text readonly id=min name=min size=1 class=time> 
+					</div>
+					<div class="leftc">
+						<input type=text readonly id=sec name=sec size=1 class=time>
+					</div>
+				</div>
+				
+				
+				
+				<div class=setalarm>
+					<hr>
+					<h2 align="right">SET ALARM</h2>
+				</div>
+				<hr>
+				
+				<div class=clock>
+					<div class="leftc" >
+						<select id=hour2 name=hour2 onChange="setv()">
+							<option value=00>00</option>
+							<option value=01>01</option>
+							<option value=02>02</option>
+							<option value=03>03</option>
+							<option value=04>04</option>
+							<option value=05>05</option>
+							<option value=06>06</option>
+							<option value=07>07</option>
+							<option value=08>08</option>
+							<option value=09>09</option>
+							<option value=10>10</option>
+							<option value=11>11</option>
+							<option value=12>12</option>
+							<option value=13>13</option>
+							<option value=14>14</option>
+							<option value=15>15</option>
+							<option value=16>16</option>
+							<option value=17>17</option>
+							<option value=18>18</option>
+							<option value=19>19</option>
+							<option value=20>20</option>
+							<option value=21>21</option>
+							<option value=22>22</option>
+							<option value=23>23</option>
+							<option value=24>24</option>
+							<script type='text/javascript'>prtsel(25);</script>
+						</select>
+					</div>
+					<div class="centerc">
+						<select id=min2 name=min2 onChange="setv()">
+							<option value=00>00</option>
+							<option value=01>01</option>
+							<option value=02>02</option>
+							<option value=03>03</option>
+							<option value=04>04</option>
+							<option value=05>05</option>
+							<option value=06>06</option>
+							<option value=07>07</option>
+							<option value=08>08</option>
+							<option value=09>09</option>
+							<option value=10>10</option>
+							<option value=11>11</option>
+							<option value=12>12</option>
+							<option value=13>13</option>
+							<option value=14>14</option>
+							<option value=15>15</option>
+							<option value=16>16</option>
+							<option value=17>17</option>
+							<option value=18>18</option>
+							<option value=19>19</option>
+							<option value=20>20</option>
+							<option value=21>21</option>
+							<option value=22>22</option>
+							<option value=23>23</option>
+							<option value=24>24</option>
+							<option value=25>25</option>
+							<option value=26>26</option>
+							<option value=27>27</option>
+							<option value=28>28</option>
+							<option value=29>29</option>
+							<option value=30>30</option>
+							<option value=31>31</option>
+							<option value=32>32</option>
+							<option value=33>33</option>
+							<option value=34>34</option>
+							<option value=35>35</option>
+							<option value=36>36</option>
+							<option value=37>37</option>
+							<option value=38>38</option>
+							<option value=39>39</option>
+							<option value=40>40</option>
+							<option value=41>41</option>
+							<option value=42>42</option>
+							<option value=43>43</option>
+							<option value=44>44</option>
+							<option value=45>45</option>
+							<option value=46>46</option>
+							<option value=47>47</option>
+							<option value=48>48</option>
+							<option value=49>49</option>
+							<option value=50>50</option>
+							<option value=51>51</option>
+							<option value=52>52</option>
+							<option value=53>53</option>
+							<option value=54>54</option>
+							<option value=55>55</option>
+							<option value=56>56</option>
+							<option value=57>57</option>
+							<option value=58>58</option>
+							<option value=59>59</option>
+							<option value=60>60</option>
+							<!---<script type='text/javascript'>prtsel(61);</script>--->
+						</select>
+					</div>
+					<div class="rightc">
+						<select id=sec2 name=sec2 onChange="setv()">
+							<option value=00>00</option>
+							<option value=01>01</option>
+							<option value=02>02</option>
+							<option value=03>03</option>
+							<option value=04>04</option>
+							<option value=05>05</option>
+							<option value=06>06</option>
+							<option value=07>07</option>
+							<option value=08>08</option>
+							<option value=09>09</option>
+							<option value=10>10</option>
+							<option value=11>11</option>
+							<option value=12>12</option>
+							<option value=13>13</option>
+							<option value=14>14</option>
+							<option value=15>15</option>
+							<option value=16>16</option>
+							<option value=17>17</option>
+							<option value=18>18</option>
+							<option value=19>19</option>
+							<option value=20>20</option>
+							<option value=21>21</option>
+							<option value=22>22</option>
+							<option value=23>23</option>
+							<option value=24>24</option>
+							<option value=25>25</option>
+							<option value=26>26</option>
+							<option value=27>27</option>
+							<option value=28>28</option>
+							<option value=29>29</option>
+							<option value=30>30</option>
+							<option value=31>31</option>
+							<option value=32>32</option>
+							<option value=33>33</option>
+							<option value=34>34</option>
+							<option value=35>35</option>
+							<option value=36>36</option>
+							<option value=37>37</option>
+							<option value=38>38</option>
+							<option value=39>39</option>
+							<option value=40>40</option>
+							<option value=41>41</option>
+							<option value=42>42</option>
+							<option value=43>43</option>
+							<option value=44>44</option>
+							<option value=45>45</option>
+							<option value=46>46</option>
+							<option value=47>47</option>
+							<option value=48>48</option>
+							<option value=49>49</option>
+							<option value=50>50</option>
+							<option value=51>51</option>
+							<option value=52>52</option>
+							<option value=53>53</option>
+							<option value=54>54</option>
+							<option value=55>55</option>
+							<option value=56>56</option>
+							<option value=57>57</option>
+							<option value=58>58</option>
+							<option value=59>59</option>
+							<option value=60>60</option>
+							<!---<script type='text/javascript'>prtsel(61);</script>--->
+						</select>
+					</div>
+				</div>
+				<audio id=alm src="http://www.orangefreesounds.com/wp-content/uploads/2015/04/Loud-alarm-clock-sound.mp3" loop controls preload="auto">
+					Your browser does not support the audio element.
+				</audio>
+				<script type='text/javascript'>document.getElementById('alm').style.visibility="hidden";</script>
+				<div id=msg>
+					Alarm OFF
+				</div>
+				<div>
+					<center>
+						<input type=button id=sb name=sb value="STOP" onclick="salm()">
+					</center>
+					<center>
+						<input type=button id=db name=db value="DISMISS" onclick="dalm()">
+					</center>
+				</div>
+				<script type='text/javascript'>document.getElementById('sb').style.visibility="hidden";</script>
+				<script type='text/javascript'>document.getElementById('db').style.visibility="hidden";</script>
+			</div>
+			</body>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
